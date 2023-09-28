@@ -1,18 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Integration</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    
-    <script type="module" src="src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Integration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body class="overflow-x-hidden d-flex flex-wrap justify-content-center vw-100">
+  <section
+    class="vw-100 vh-100 d-flex align-items-center p-3 p-md-5 flex-wrap align-content-center position-relative hero-banner">
+    <h1 class="display-4 col-md-7"><strong>Lorem ipsum dolor</strong> sit amet consectetur.</h1>
+    <div class="md-space"></div>
+    <button class="btn btn-primary py-2 px-4">Lorem ipsum</button>
+    <div class="position-absolute top-50 end-0 me-5 translate-middle-y overflow-visible" style="width: 40%;">
+      <img class="overflow-visible" src="src/img/LOGO.svg" alt="">
+    </div>
+  </section>
+  <div class="md-space"></div>
+  <section class="d-flex vw-100 h-auto p-0 w-80 flex-wrap gap-2 gap-md-0 position-relative">
+    <div class="position-absolute top-50 start-0 translate-watermark overflow-visible" style="width: 40%;"
+      data-aos-offset="200" data-aos-delay="50" data-aos-duration="800">
+      <img class="overflow-visible" src="src/img/LOGO.svg" alt="">
+    </div>
+    <div class="position-absolute top-50 start-0 translate-watermark overflow-visible z-2" style="width: 40%;"
+      data-aos-offset="200" data-aos-delay="50" data-aos-duration="800">
+      <img class="overflow-visible opacity-25 " src="src/img/LOGO.svg" alt="">
+    </div>
+    <div class="col-12 col-md-6 d-flex align-items-start p-0 overflow-hidden">
+      <!-- <img src="src/img/20b04cf736e6dbc1b3d544fa088dbd32.jpeg" class="w-100 h-100 object-fit-contain" alt=""
+        data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="800" loading="lazy"> -->
+      <div class="container-anim">
+        <div class="reveal">
+          <img class="w-100 h-100 object-fit-cover" src="src/img/20b04cf736e6dbc1b3d544fa088dbd32.jpeg">
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 d-flex p-0 px-md-5 py-md-0 flex-wrap align-content-start gap-4"
+      style="align-content: space-evenly !important;">
+      <span class="brown"><strong>Lorem ipsum</strong></span>
+      <h2 class="display-5"><strong>Lorem ipsum dolor</strong> sit amet consectetur.</h2>
+      <p class="text-justify">Lorem ipsum dolor sit amet consectetur. Pellentesque auctor elementum penatibus praesent
+        sed. Vitae sem et ac venenatis massa. Urna mauris quam egestas tellus quis blandit. Eget fames nunc ut eleifend
+        consectetur consequat quisque sed. Id viverra vitae non ac diam mauris tristique. </p>
+      <button class="btn btn-primary py-2 px-4">Lorem ipsum</button>
+    </div>
+  </section>
+
+
+  <section class="d-flex vw-100 h-auto justify-content-center align-content-center align-items-center flex-wrap">
+    <div class="md-space"></div>
+    <div class="position-relative w-80">
+      <h2 class="display-5 col-12 col-md-8 mb-4"><strong>Lorem ipsum dolor</strong> sit amet consectetur.</h2>
+      <div class="slider-container d-flex position-relative" style="height: 80vh;">
+        <div class="slide">
+          <div
+            class="container-content position-absolute bottom-0 w-100 h-100 d-flex align-items-end py-4 px-5 text-white">
+            <h3>Lorem</h3>
+          </div>
+          <div class="container-img">
+            <img src="src/img/ae12a5494d3fb887ddd6ad2eefbc2cbf.jpeg" alt="" srcset="">
+          </div>
+        </div>
+        <div class="slide">
+          <div
+            class="container-content position-absolute bottom-0 w-100 h-100 d-flex align-items-end py-4 px-5 text-white">
+            <h3>Lorem</h3>
+          </div>
+          <div class="container-img">
+            <img src="src/img/roberto-nickson-tleCJiDOri0-unsplash.jpg" alt="" srcset="">
+          </div>
+        </div>
+        <div class="slide">
+          <div
+            class="container-content position-absolute bottom-0 w-100 h-100 d-flex align-items-end py-4 px-5 text-white">
+            <h3>Lorem</h3>
+          </div>
+          <div class="container-img">
+            <img src="src/img/spacejoy-9M66C_w_ToM-unsplash.jpg" alt="" srcset="">
+          </div>
+        </div>
+        <div class="slide">
+          <div
+            class="container-content position-absolute bottom-0 w-100 h-100 d-flex align-items-end py-4 px-5 text-white">
+            <h3>Lorem</h3>
+          </div>
+          <div class="container-img">
+            <img src="src/img/spacejoy-PyeXkOVmG1Y-unsplash.jpg" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-nav d-flex position-absolute bottom-0 end-0 align-content-center justify-content-center bg-white h-25 w-25">
+        <div class="col-6 d-flex justify-content-center align-content-center">
+          <button class="custom-prev custom-nav-slick"><svg width="22" height="13" viewBox="0 0 22 13" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.67159 12.0725L7.00588 11.7383C7.11163 11.6321 7.17101 11.4883 7.17101 11.3385C7.17101 11.1887 7.11163 11.0449 7.00588 10.9388L3.04831 7.00347H20.772C20.922 7.00347 21.066 6.94392 21.1721 6.83789C21.2783 6.73187 21.3381 6.58803 21.3384 6.43797V5.96625C21.3384 5.81603 21.2787 5.67195 21.1725 5.56573C21.0663 5.4595 20.9222 5.39982 20.772 5.39982H3.04831L7.00588 1.4664C7.11163 1.36023 7.17101 1.21649 7.17101 1.06665C7.17101 0.916799 7.11163 0.773058 7.00588 0.666895L6.67159 0.33261C6.56543 0.226857 6.42169 0.16748 6.27184 0.16748C6.122 0.16748 5.97826 0.226857 5.87209 0.33261L0.378666 5.80282C0.27263 5.90902 0.213074 6.05296 0.213074 6.20304C0.213074 6.35311 0.27263 6.49705 0.378666 6.60325L5.87209 12.0725C5.97826 12.1783 6.122 12.2377 6.27184 12.2377C6.42169 12.2377 6.56543 12.1783 6.67159 12.0725Z"
+                fill="#D6A243" />
+            </svg>
+          </button>
+        </div>
+        <div class="col-6 d-flex justify-content-center align-content-center">
+          <button class="custom-next custom-nav-slick"><svg width="22" height="13" viewBox="0 0 22 13" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.7396 12.0726L21.2331 6.60237C21.3391 6.49617 21.3987 6.35223 21.3987 6.20216C21.3987 6.05208 21.3391 5.90814 21.2331 5.80194L15.7387 0.333586C15.6326 0.227834 15.4888 0.168457 15.339 0.168457C15.1891 0.168457 15.0454 0.227834 14.9392 0.333586L14.6049 0.666943C14.4992 0.773106 14.4398 0.916847 14.4398 1.06669C14.4398 1.21654 14.4992 1.36028 14.6049 1.46644L18.5625 5.40173H0.839792C0.689727 5.40197 0.545892 5.46176 0.439867 5.56796C0.333841 5.67416 0.274292 5.81809 0.274292 5.96816V6.43894C0.274292 6.75094 0.527792 7.00537 0.840721 7.00537H18.5644L14.6068 10.9397C14.501 11.0459 14.4417 11.1896 14.4417 11.3395C14.4417 11.4893 14.501 11.6331 14.6068 11.7392L14.9411 12.0735C15.0472 12.1793 15.191 12.2386 15.3408 12.2386C15.4907 12.2386 15.6344 12.1793 15.7406 12.0735L15.7396 12.0726Z"
+                fill="#D6A243" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bg-space"></div>
+  </section>
+
+  <section class="d-flex w-80 align-content-center align-items-center flex-wrap">
+    <h2 class="display-5 col-12 col-md-6"><strong>Lorem ipsum dolor</strong> sit amet consectetur.</h2>
+    <div class="md-space"></div>
+    <div class="col-12 p-0 px-md-5 d-flex align-items-center align-content-center">
+      <div class="col-8 d-flex justify-content-center align-items-center align-content-center">
+        <p class="m-0">Lorem ipsum dolor sit amet consectetur. Pellentesque auctor elementum penatibus praesent sed. Vitae sem et ac
+          venenatis massa. Urna mauris quam egestas tellus quis blandit. Eget fames nunc ut eleifend consectetur
+          consequat quisque sed. Id viverra vitae non ac diam mauris tristique. Velit mauris laoreet nec neque tortor
+          nulla auctor. Tortor vitae id viverra vitae. Diam id vel venenatis leo justo scelerisque viverra diam. Lacus
+          ultrices hendrerit amet.</p>
+      </div>
+      <div class="col-4 d-flex justify-content-center align-items-center align-content-center">
+        <button class="btn btn-primary py-2 px-4">Lorem ipsum</button>
+      </div>
+    </div>
+  </section>
+  <div class="md-space"></div>
+
+
+
+
+  <script type="module" src="src/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
