@@ -166,5 +166,51 @@ button.custom-nav-slick {
 @media screen and (max-width: 700px) {
     .w-80 {
         width: 90% !important;
-    }  
+    }
+}
+
+.item-interior a {
+    color: $secondary;
+    transition: all .3s ease-in-out;
+
+    svg {
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+        svg {
+            transform: translateX(10px);
+        }
+    }
+}
+
+.interior-container {
+    h4 {
+        font-weight: 300;
+
+        strong {
+            font-weight: 500;
+        }
+    }
+
+}
+
+$interior-container-count: 6;
+
+@mixin alternating-flex-direction($n) {
+    @if $n % 2==0 {
+        flex-direction: row-reverse;
+    }
+
+    @else {
+        flex-direction: row;
+    }
+}
+
+.interior-container {
+    @for $i from 1 through $interior-container-count {
+        &:nth-child(#{$i}) {
+            @include alternating-flex-direction($i);
+        }
+    }
 }

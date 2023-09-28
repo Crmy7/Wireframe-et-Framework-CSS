@@ -49,3 +49,19 @@ $(document).ready(function () {
         slider.slick('slickNext');
     });
 });
+
+$('.interior-container').each(function () {
+    const h4Element = $(this).find('.h4-anim');
+
+    gsap.from(h4Element, {
+        y: 300,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: this,
+            start: 'top 125%',
+            end: 'bottom center',
+            scrub: 1,
+            toggleActions: 'restart none none reverse',
+        },
+    });
+});
