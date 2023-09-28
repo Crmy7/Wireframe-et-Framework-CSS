@@ -1,0 +1,9 @@
+//Override des variables bootstrap scss ici
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.test{
+    h1{
+        color: red;
+    }
+}
